@@ -1,0 +1,4 @@
+com\example\servlet\PersonelListeleServlet.class
+com\example\servlet\PersonelEkleServlet.class
+com\example\model\Personel.class
+com\example\PersonnelApp.class

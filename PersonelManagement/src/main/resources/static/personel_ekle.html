@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personel Ekle</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="my-4">Personel Ekle</h2>
+        <nav class="nav">
+            <a class="nav-link" href="index.html">Anasayfa</a>
+            <a class="nav-link" href="personel_ekle.html">Personel Ekle</a>
+            <a class="nav-link" href="personel_listesi.html">Personel Listesi</a>
+        </nav>
+
+        <form action="/personelEkle" method="post">
+            <div class="form-group">
+                <label for="ad">Ad:</label>
+                <input type="text" class="form-control" id="ad" name="ad" required>
+            </div>
+            <div class="form-group">
+                <label for="soyad">Soyad:</label>
+                <input type="text" class="form-control" id="soyad" name="soyad" required>
+            </div>
+            <div class="form-group">
+                <label for="sicilNo">Sicil Numarası:</label>
+                <input type="text" class="form-control" id="sicilNo" name="sicilNo" required>
+            </div>
+            <div class="form-group">
+                <label for="departman">Departman:</label>
+                <select multiple class="form-control" id="departman" name="departman">
+                    <option>IT</option>
+                    <option>HR</option>
+                    <option>Finance</option>
+                    <option>Marketing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="telefon">Telefon:</label>
+                <input type="text" class="form-control" id="telefon" name="telefon">
+            </div>
+            <div class="form-group">
+                <label for="iseGirisTarihi">İşe Giriş Tarihi:</label>
+                <input type="date" class="form-control" id="iseGirisTarihi" name="iseGirisTarihi" required>
+            </div>
+            <div class="form-group">
+                <label for="maas">Maaş:</label>
+                <input type="number" class="form-control" id="maas" name="maas" required>
+            </div>
+            <div class="form-group">
+                <label for="aktif">Aktiflik:</label>
+                <select class="form-control" id="aktif" name="aktif">
+                    <option value="true">Aktif</option>
+                    <option value="false">Pasif</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
